@@ -1,0 +1,27 @@
+{
+  "name": "supremuscore",
+  "version": "1.0.0",
+  "description": "Supremus Core",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/demerval/SupremusCore.git"
+  },
+  "keywords": [
+    "Supremus"
+  ],
+  "author": "Demerval de Souza Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/demerval/SupremusCore/issues"
+  },
+  "homepage": "https://github.com/demerval/SupremusCore#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "moment": "^2.22.1",
+    "node-firebird": "^0.8.4"
+  }
+}
