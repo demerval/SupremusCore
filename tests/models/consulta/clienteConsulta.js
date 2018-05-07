@@ -7,6 +7,7 @@ campos.set('tel1', Fields.string.string('TEL1'));
 
 const config = {
   nome: 'Clientes',
+  versao: 1,
   campos: campos
 }
 
