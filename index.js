@@ -1,4 +1,5 @@
 exports.VerificarEstruturaDB = require('./lib/estrutura/estruturaVerificar');
+exports.VerificarUpdateDados = require('./lib/estrutura/updateVerificar');
 
 exports.DAO = require('./lib/DAO');
 exports.GeradorSQL = require('./lib/geradorSql');
