@@ -1,6 +1,6 @@
 class UpdateTeste {
 
-  execute(at, dao) {
+  async execute(at, dao) {
 
   }
 
@@ -11,7 +11,7 @@ class UpdateTeste {
   salvarId() {
     return false;
   }
-  
+
 }
 
 module.exports = UpdateTeste;
