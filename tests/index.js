@@ -1,14 +1,15 @@
 const path = require('path');
 global.__basedir = path.resolve(__dirname, '../');
 
-const { VerificarEstruturaDB, TabelaConsulta, AND, OR, CONTEM, MAIOR_IGUAL } = require(__basedir + '/index');
+const { VerificarEstruturaDB, TabelaConsulta, AND, OR, CONTEM, MAIOR_IGUAL, VerificarUpdateDados } = require(__basedir + '/index');
 const UsuarioModel = require('./models/usuarioModel');
 const ClienteModel = require('./models/clienteModel');
 
 const usuarioConfig = require('./models/consulta/usuarioConsulta');
 
 async function verificarEstrutura() {
-  await VerificarEstruturaDB.verificarEstruturaModels('/tests/models');
+  //await VerificarEstruturaDB.verificarEstruturaModels('/tests/models');
+  await VerificarUpdateDados.verificarUpdate(1, '/tests/updates');
 }
 
 async function consultar() {
@@ -79,9 +80,9 @@ async function novoCliente() {
   return cliente.getItem();
 }
 
-/*verificarEstrutura()
+verificarEstrutura()
   .then(() => console.log('Fim verificação!'))
-  .catch(error => console.log(error));*/
+  .catch(error => console.log(error));
 
 //consultar();
 //consultarUsuarioPorId();
@@ -95,14 +96,14 @@ async function novoCliente() {
     console.log(error);
   });*/
 
-updateUsuario()
-  .then(usuario => {
-    console.log('*** Update Usuario ***');
-    console.log(usuario);
-  })
-  .catch(error => {
-    console.log(error);
-  });
+//updateUsuario()
+//  .then(usuario => {
+//    console.log('*** Update Usuario ***');
+//    console.log(usuario);
+//  })
+//  .catch(error => {
+//    console.log(error);
+//  });
 
 /*novoCliente()
   .then(cliente => {
