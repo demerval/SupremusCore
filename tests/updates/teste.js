@@ -1,6 +1,6 @@
 class UpdateTeste {
 
-  execute(dao) {
+  execute(at, dao) {
 
   }
 
@@ -8,6 +8,10 @@ class UpdateTeste {
     return 1;
   }
 
+  salvarId() {
+    return false;
+  }
+  
 }
 
 module.exports = UpdateTeste;
