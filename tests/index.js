@@ -9,7 +9,7 @@ const usuarioConfig = require('./models/consulta/usuarioConsulta');
 
 async function verificarEstrutura() {
   //await VerificarEstruturaDB.verificarEstruturaModels('/tests/models');
-  await VerificarUpdateDados.verificarUpdate(1, '/tests/updates');
+  //await VerificarUpdateDados.verificarUpdate(1, '/tests/updates');
 }
 
 async function consultar() {
